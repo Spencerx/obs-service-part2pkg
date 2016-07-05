@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+#
+export DH_VERBOSE=1
+DESTDIR=debian/obs-service-part2pkg
+
+%:
+	dh $@
+
+override_dh_auto_build: ;
+
+override_dh_auto_install:
+	mkdir -p `pwd`/$(DESTDIR)/usr/lib/obs/service/
+	cp -a part2* `pwd`/$(DESTDIR)/usr/lib/obs/service/
+

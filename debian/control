@@ -1,0 +1,12 @@
+Source: obs-service-part2pkg
+Section: devel
+Priority: extra
+Maintainer: Adrian Schroeter <adrian@suse.de>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+
+Package: obs-service-part2pkg
+Architecture: all
+Depends: ${misc:Depends}, sed, perl, libyaml-perl, libyaml-libyaml-perl
+Description: An OBS source service: 
+

@@ -1,0 +1,4 @@
+<service name="part2pkg">
+<summary>creates a deb out of a part specified in snapcraft.yaml</summary>
+   <description>Can be used to build packages for reusing parts</description>
+</service>

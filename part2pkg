@@ -1,0 +1,10 @@
+#!/bin/bash
+
+br=`mktemp -d /tmp/part2deb.XXXX`
+
+# TODO: check if this is a debian or rpm distro and call the right tool
+perl /usr/lib/obs/service/part2deb.pl "$PWD" "$br" "/.build.snap_parts" "/usr/src/packages/OTHER/"
+
+#
+rm -rf "$br"
+
